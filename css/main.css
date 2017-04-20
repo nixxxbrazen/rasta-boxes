@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  height: 100px;
+  width: 45%;
+}
+
+.red {background-color: red; }
+.green {background-color: green; }
+.yellow {background-color: yellow; }
+.black {background-color: black; }
+
+@media(max-width: 600px) {
+  .green, .yellow {
+  display: none;
+}
+}
+
+@media(min-width:1000px) {
+  .red , .green , .yellow , .black {
+    width: 100%;
+  }
+}
